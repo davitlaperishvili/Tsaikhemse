@@ -276,5 +276,15 @@ header{
  .social{
      display: flex;
      width: 120px;
+     height: 24px;
+     align-items: center;
+     
+ }
+
+ .social a{
+     width: 33%;
  }
  
+ .social img{
+     width: 33%;
+ }
