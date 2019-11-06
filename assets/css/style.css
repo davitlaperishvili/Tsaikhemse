@@ -48,6 +48,15 @@ header{
     text-align: center;
 }
 
+.main-content::before{
+    content: url(../images/basil1.png);
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    top: 463px;
+    
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -148,6 +157,7 @@ header{
     background-color: #fff;
     position: relative;
     text-align: center;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
 .site-content::before {
@@ -251,6 +261,16 @@ header{
     align-items: center;
     box-sizing: border-box;
  }
+
+ footer::before{
+     content: url(../images/basil2.png);
+     position: absolute;
+     width: 411px;
+     height: 568px;
+     left: -280px;
+     top: -220px;
+     z-index: -1;
+    }
 
  footer::after{
     content: '';
@@ -361,5 +381,15 @@ header{
     }
     nav{
     	display: flex;
+    }
+}
+@media (max-width: 768px){
+    .main-content::before{
+        content: url(../images/basil1.png);
+        position: absolute;
+        z-index: -1;
+        right: 0px;
+        top: 430px;
+        
     }
 }
