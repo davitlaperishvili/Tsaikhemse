@@ -12,17 +12,33 @@
     <header>
 
         <img class="site-logo" src="./assets/images/logo.svg" alt="ლოგო">
-        <nav>
+        <nav  id="open" >
             <ul class="navigation">
+                <li class="mini-nav"><a href="!#">მთავარი</a></li>
                 <li><a href="!#">პროდუქცია</a></li>
                 <li><a href="!#">კონტაქტი</a></li>
             </ul>
+            <hr class="mininav-hr mini-nav" >
+            <div class="mininav-social" class="mini-nav">
+                <a href=""><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+                <a href=""><img src="./assets/images/instagram.svg" alt="Instagram"></a>
+                <a href=""><img src="./assets/images/youtube.svg" alt="YouTube"></a>
+            </div>
+
         </nav>
-        <div class="MiniMenu">
-            <span class="menu" ></span>
-            <span class="menu" ></span>
-            <span class="menu" ></span>
-        </div>
+
+        <nav id="menu">
+            <ul class="navigation">
+                    <li><a href="!#">პროდუქცია</a></li>
+                    <li><a href="!#">კონტაქტი</a></li>
+                </ul>
+
+        </nav>
+        <button type="button" class="MiniMenu" id="MiniMenu"onclick="document.getElementById('open').style.display='flex'">
+            <span class="menu-item" ></span>
+            <span class="menu-item" ></span>
+            <span class="menu-item" ></span>
+        </button>
 
     </header>
 
@@ -47,42 +63,42 @@
                 <img src="./assets/images/1.png" alt="გემრიელი ფოტო">
                 <h2>სპაგეტი ალა მატრიჩიანა</h2>
                 <p>ტომატი,ხახვი, ბაზელიკი</p>
-                <button class="add"> დამატება</button>
+                <button class="add">დამატება</button>
                 </li>
 
                 <li>
                 <img src="./assets/images/2.png" alt="გემრიელი ფოტო">
                 <h2>სპაგეტი ხორცის სოუსით</h2>
                 <p>ღვინო,ნიორი,  ხახვი,ფარში,სპაგეტი</p>
-                <button class="add"> დამატება</button>
+                <button class="add">დამატება</button>
                 </li>
         
                 <li>
                 <img src="./assets/images/3.png" alt="გემრიელი ფოტო">
                 <h2>სპაგეტი ჩერითი</h2>
                 <p>სპაგეტი,პომიდორი, სატაცური,ბაზილიკი,ყველი,ნიორი</p>
-                <button class="add"> დამატება</button>
+                <button class="add">დამატება</button>
                 </li>
         
                 <li>
                 <img src="./assets/images/4.png" alt="გემრიელი ფოტო">
                 <h2>სპაგეტი ზეთისხილით</h2>
                 <p>პომიდორი,ნიორი,  ზეთი,ზეთისხილი,რეჰანი</p>
-                <button class="add"> დამატება</button>
+                <button class="add">დამატება</button>
                 </li>
 
                 <li>
                 <img src="./assets/images/5.png" alt="გემრიელი ფოტო">
                 <h2>სპაგეტი სოკოთი</h2>
                 <p>სოკო,ქინძი, პილპილი,ყველი</p>
-                <button class="add"> დამატება</button>
+                <button class="add">დამატება</button>
                 </li>
 
                 <li>
                 <img src="./assets/images/6.png" alt="გემრიელი ფოტო">
                 <h2>სპაგეტი "კარბონარა"</h2>
                 <p>სპაგეტი,კვერცხი, არაჯანი,ზეთი,ყველი</p>
-                <button class="add"> დამატება</button>
+                <button class="add">დამატება</button>
                 </li>
     </ul>
 </section>

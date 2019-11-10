@@ -75,22 +75,22 @@ header{
         right: 0;
         background-color: #181818;
         opacity: 0.6;
-        z-index: -1;
+        z-index: -2;
     
 }
 
 .MiniMenu {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
     background-color: #181818;
     border-radius: 10px;
-    /*display: flex;*/
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.menu {
+.menu-item {
     display: block;
     width: 10px;
     height: 2px;
@@ -99,6 +99,61 @@ header{
     margin: 1px 0;
 }
 
+    /* Mobile version Manu */
+
+ #open{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+    height: 100vh;
+    width: 100vw;
+    top: 60px;
+    z-index: 3;
+    
+}
+#open a{
+    color: rgb(252, 248, 248);
+}
+#open a:hover{
+    color: #BADC58;
+}
+
+#open ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 30%;
+}
+#open{
+    display: none;
+}
+.mininav-social{
+    display: flex;
+    width: 120px;
+    height: 24px;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 110px;
+}
+.mininav-social img{
+    height: 20px;
+    
+}
+.mininav-hr{
+    
+    width: 80%;
+    background-color: rgb(54, 53, 53);
+    position: absolute;
+    bottom: 150px;
+} 
+
+        /* Mobile version Menu end */
+
  .main-pic{
     width: 100%;
     position: absolute;
@@ -106,7 +161,7 @@ header{
     left: 0;
     height: calc(100vh - 60px);
     object-fit: cover;
-    z-index: -2;
+    z-index: -3;
 }
 
 .main-title {
@@ -201,7 +256,7 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 308px;
+    width: 308px; 
     height: 452px;
     
 }
@@ -241,6 +296,12 @@ header{
     color: black;
     background-color: #BADC58;
     cursor: pointer;
+}
+
+.add.active{
+    background-color: #ECF0F1;
+    color: #BDC3C7;
+    border: 1px solid #ECF0F1;
 }
 
  /* footer */
@@ -360,6 +421,10 @@ header{
     .MiniMenu {
         display: flex;
     }
+    
+    /* .open{
+        display: flex;
+    } */
 
     .main-title {
         font-size: 40px;
@@ -368,17 +433,21 @@ header{
     nav{
     	display: none;
     }
-    nav.active{
-    	display: flex;
-    }
+    
 }
 @media (min-width: 460px) {
     .MiniMenu {
         display: none;
     }
+    .mini-nav{
+        display: none;
+    }
     .main-title {
         font-size: 50px;
     }
+    /* .open{
+        display: none;
+    } */
     nav{
     	display: flex;
     }
