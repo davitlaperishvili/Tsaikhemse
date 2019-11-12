@@ -101,7 +101,7 @@ header{
 
     /* Mobile version Manu */
 
- #open{
+ .open{
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -113,14 +113,14 @@ header{
     z-index: 3;
     
 }
-#open a{
+.open a{
     color: rgb(252, 248, 248);
 }
-#open a:hover{
+.open a:hover{
     color: #BADC58;
 }
 
-#open ul{
+.open ul{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,9 +128,7 @@ header{
     height: 200px;
     margin-top: 30%;
 }
-#open{
-    display: none;
-}
+
 .mininav-social{
     display: flex;
     width: 120px;
@@ -251,6 +249,9 @@ header{
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+}
+.product-list li:hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 .product-list li {
     display: flex;
@@ -422,9 +423,6 @@ header{
         display: flex;
     }
     
-    /* .open{
-        display: flex;
-    } */
 
     .main-title {
         font-size: 40px;
@@ -445,9 +443,10 @@ header{
     .main-title {
         font-size: 50px;
     }
-    /* .open{
+    .open{
         display: none;
-    } */
+    }
+    
     nav{
     	display: flex;
     }
