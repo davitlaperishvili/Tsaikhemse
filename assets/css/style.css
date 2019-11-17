@@ -1,8 +1,22 @@
+@font-face {
+    font-family: caps;
+    src: url(../fonts/caps.ttf);
+}
+
+@font-face {
+    font-family: normal;
+    src: url(../fonts/normal-bold.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: normal;
+}
+h1, h2{
+    font-family: caps;
 }
 body{
     max-width: 1084px;
