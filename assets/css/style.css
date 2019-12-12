@@ -15,8 +15,12 @@
     list-style: none;
     font-family: normal;
 }
+
 h1, h2{
     font-family: caps;
+}
+html {
+    max-width: calc(100vw - 19px);
 }
 body{
     max-width: 1084px;
@@ -328,8 +332,6 @@ header{
  /* footer */
    
  footer{
-    
-    height: 560px;
     padding-top: 103px;
     width: 100%;
     position: relative;
@@ -398,25 +400,24 @@ header{
      width: 100%;
      justify-content: space-between;
  }
+ .social-svg{
+    fill: white;
+    width: 25px;
+    
+}
+.social-svg:hover{
+    fill: #BADC58;
+}
  
  .social{
      display: flex;
      width: 120px;
      height: 24px;
      align-items: center;
-     
- }
-
- .social a{
-     width: 33%;
+     justify-content: space-evenly;
  }
  
- .social img{
-     width: 33%;
- }
- .social a svg{
-     fill: black;
- }
+ 
 
     /* Responsive */
 
@@ -425,6 +426,9 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .payment{
+        margin-bottom: 10px;
     }
 
     .footer-social>a{
